@@ -1,0 +1,3 @@
+- [개념] Promise는 비동기 작업의 성공 또는 실패 결과를 나타내는 객체입니다.
+- [사용 방법] Promise 객체를 생성할 때 실행함수executor를 전달하며, 이는 Promise가 만들어질 때 자동으로 실행됩니다.
+- executor는 `resolve`와 `reject` 2개의 인자를 갖습니다.
