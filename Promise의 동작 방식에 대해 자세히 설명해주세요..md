@@ -1,3 +1,14 @@
 - [개념] Promise는 비동기 작업의 성공 또는 실패 결과를 나타내는 객체입니다.
 - [사용 방법] Promise 객체를 생성할 때 실행함수executor를 전달하며, 이는 Promise가 만들어질 때 자동으로 실행됩니다.
-- executor는 `resolve`와 `reject` 2개의 인자를 갖습니다.
+- executor는 `resolve`와 `reject`라고 부르는 2개의 콜백을 인자를 갖고, 비동기 작업이 완료되면 결과에 따라 둘 중 하나가 실행됩니다.
+	- `resolve`는 비동기 작업이 성공적으로 처리된 경우 결과값 `value`를 인자로 호출합니다.
+	- `reject`는 비동기 작업이 실패한 경우 에러 객체 `error`를 인자로 호출합니다.
+- [내부 프로퍼티 종류] promise 객체에는 state와 result라는 내부 프로퍼티가 있습니다.
+- 1. `state`는 비동기 작업의 처리 상태를 의미합니다. 
+	- 초기값은 `대기pending`이었다가, 비동기 작업이 성공적으로 처리하여 `resolve`가 호출되면 `이행fulfilled`로, 비동기 작업이 실패하여 `reject`가 호출되면 `거부rejected`로 변합니다.
+- 2. `result`는 비동기 작업의 처리 결과를 의미합니다.
+	- 초기값은 `undefined`이었다가, `resolve(value)`가 호출되면 value로, `reject(error)`가 호출되면 error로 변합니다.
+- [내부 메서드 종류] promise 객체는 `then`, `catch`, `finally`라는 내부 메서드를 사용하여 비동기 작업에 대한 후속 처리를 할 수 있습니다.
+- 1. `then`은 첫번째 인자로 promise가 resolve되었을 때 value를 받아 실행되는 콜백을, 두번째 인자로 promise가 reject되었을 때 error를 받아 실행되는 콜백을 받습니다.
+- `catch`는 첫번째 인자로 promise가 reject되었을 때 error를 받아 실행되는 콜백을 받습니다.
+- `finally`는 promise의 결과와 상관없이 무조건 실행되는 콜백으로 작업을 마무리하는 보편적인 동작을 수행할 수 있습니다.
