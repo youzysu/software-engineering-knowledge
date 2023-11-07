@@ -25,6 +25,8 @@
 #### 4. 계층화 시스템 Layered System
 - 서버는 다중 계층으로 구성될 수 있습니다. 보안, 로드 밸런싱, 암호화 계층을 추가하여 유연한 구조를 만들 수 있습니다. 
 - 또한 PROXY, GATEWAY 같은 네트워크 기반의 중간 매체를 사용할 수 있습니다.
+#### 5. 자체 표현성 Self-descriptiveness
+- REST API 그 자체로 의미를 지니고 있어 무엇을 표현하는지 쉽게 이해할 수 있습니다.
 
 ## 구성 요소
 
@@ -66,11 +68,48 @@
 - 리소스 조회, 생성, 수정 등 표현하고자 하는 행위에 적합한 METHOD를 사용해야 합니다.
 
 ## HTTP 응답 상태 코드
+- REST API는 요청에 대한 응답 상태 코드도 명확하게 정의해야 합니다.
+- 대표적인 상태 코드는 다음과 같습니다.
+
+### 2XX 요청 성공 관련
+|상태코드|의미|설명|
+|:-:|:-:|-|
+|200| OK|클라이언트의 요청을 정상적으로 수행|
+|201| Created|요청을 성공적으로 수행하여 새로운 리소스 생성|
+
+### 3XX 리다이렉션 관련
+|상태코드|의미|설명|
+|:-:|:-:|-|
+|301|Moved Permanently|요청한 리소스의 URI가 변경된 경우 변경된 URI를 응답해야 함|
+|304|Not Modified|캐시 목적으로 사용되며, 응답이 수정되지 않아 계속해서 캐시된 응답을 사용함을 의미|
+
+### 4XX 클라이언트 에러 관련
+|상태코드|의미|설명|
+|:-:|:-:|-|
+|400|Bad Request|클라이언트의 요청이 부적절한 경우|
+|401|Unauthorized|인증되지 않은 클라이언트가 보호된 리소스를 요청한 경우|
+|403|Forbidden|접근할 권리가 없는 리소스를 요청한 경우|
+|404|Not Found|요청받은 리소스를 찾을 수 없는 경우|
+|405|Method Not Allowed|해당 리소스에서 불가능한 METHOD로 요청한 경우|
+
+### 5XX 서버 에러 관련
+|상태코드|의미|설명|
+|:-:|:-:|:-:|
+|500|Internal Server Error|요청에 대해 서버가 처리 방법을 모르는 경우|
 
 ## 설계 참고 사항
+
+- 슬래시 구분자(/)를 사용하여 계층 관계를 나타냅니다.
+	- 리소스 간 연관 관계는 `/리소스명/리소스ID/연관 관계에 있는 다른 리소스명`과 같이 표현합니다.
+	- 예를 들어, 일반적으로 소유 관계일 때 `/users/{user-id}/devices`와 같이 표현합니다.
+- URI 마지막 문자로 슬래시(/)를 포함하지 않습니다.
+- 가독성을 위해 하이픈`-`을 이용할 수 있고, 언더바`_`는 URI에 사용하지 않습니다.
+- URI에 대문자를 사용하지 않고 소문자가 적합합니다.
+- 파일 확장자는 URI에 포함시키지 않고, Header의 Accept를 사용합니다.
 
 ## 참고자료
 - [Principled Design of the Modern Web Architecture, Roy Fieldiing, 2002](https://ics.uci.edu/~taylor/documents/2002-REST-TOIT.pdf)
 - [AWS RESTful API란 무엇인가요?](https://aws.amazon.com/ko/what-is/restful-api/)
 - [Microsoft RESTful 웹 API 디자인](https://learn.microsoft.com/ko-kr/azure/architecture/best-practices/api-design?fbclid=IwAR3TZPok-d2vsIwMyguAGAzfJS8LK5qITS9a2PE5YeaJBtNsUCrtiFDfg74)
 - [REST API 제대로 알고 사용하기](https://meetup.nhncloud.com/posts/92)
+- [MDN HTTP 상태 코드](https://developer.mozilla.org/ko/docs/Web/HTTP/Status)
