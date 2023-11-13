@@ -36,20 +36,7 @@
 
 ### 2. 행위 Verb
 - HTTP METHOD를 이용하여 자원에 대해 수행해야 하는 작업 행위를 정의합니다.
-- 주요 HTTP METHOD로는 GET, POST, PUT, PATCH, DELETE가 있습니다.
-#### GET
-- GET을 사용하여 해당 리소스를 조회하고 접근하여 도큐먼트에 대한 자세한 정보를 가져옵니다.
-#### POST
-- POST를 사용하여 서버에 데이터를 전송하여 새로운 리소스를 생성합니다.
-- 동일한 POST 요청을 여러번 전송하면 동일한 리소스가 여러번 생성되는 부작용이 있습니다.
-#### PUT
-- PUT을 사용하여 리소스를 만들거나 기존 리소스를 업데이트합니다. 기존 리소스를 대체하거나 기존 리소스에 새로운 내용을 추가합니다.
-- 동일한 PUT 요청을 여러번 전송해도 그 결과는 항상 동일합니다.
-#### PATCH
-- PATCH를 사용하여 기존 리소스의 일부분을 업데이트합니다.
-- 동일한 PATCH 요청을 여러번 전송하는 경우 결과가 항상 동일하지 않을 수 있습니다.
-#### DELETE
-- DELETE를 사용하여 리소스를 삭제합니다.
+- 주요 HTTP METHOD로는 GET, POST, PUT, PATCH, DELETE가 있습니다. ([HTTP Request Method 바로가기]())
 
 ### 3. 표현 Representations
 - 형식이 지정된 리소스를 의미하며, 클라이언트가 요청하는 자원의 형식은 다양할 수 있습니다.
@@ -59,43 +46,14 @@
 
 ### 1. URI는 리소스 자체를 표현해야 합니다.
 ### 2. 자원에 대한 행위는 METHOD로 표현합니다.
-
 - 리소스에는 동사로 행위에 대한 표현을 하지 않고, 명사를 사용하여 리소스 자체를 표현해야 합니다.
 - 리소스는 Collection과 Document로 표현할 수 있습니다. 
 	- Collection은 Document들의 집합이고 Document는 문서, 객체로 볼 수 있습니다.
 	- Collection은 복수를 사용하고, 해당 Collection 안의 특정 Document를 의미하도록 URI를 표현합니다.
 	- 예를 들어, `/players/13`은 players라는 Collection과 13을 의미하는 Document로 URI를 표현한 것입니다.
 - 리소스 조회, 생성, 수정 등 표현하고자 하는 행위에 적합한 METHOD를 사용해야 합니다.
-
-## HTTP 응답 상태 코드
-- REST API는 요청에 대한 응답 상태 코드도 명확하게 정의해야 합니다.
-- 대표적인 상태 코드는 다음과 같습니다.
-
-### 2XX 요청 성공 관련
-|상태코드|의미|설명|
-|:-:|:-:|-|
-|200| OK|클라이언트의 요청을 정상적으로 수행|
-|201| Created|요청을 성공적으로 수행하여 새로운 리소스 생성|
-
-### 3XX 리다이렉션 관련
-|상태코드|의미|설명|
-|:-:|:-:|-|
-|301|Moved Permanently|요청한 리소스의 URI가 변경된 경우 변경된 URI를 응답해야 함|
-|304|Not Modified|캐시 목적으로 사용되며, 응답이 수정되지 않아 계속해서 캐시된 응답을 사용함을 의미|
-
-### 4XX 클라이언트 에러 관련
-|상태코드|의미|설명|
-|:-:|:-:|-|
-|400|Bad Request|클라이언트의 요청이 부적절한 경우|
-|401|Unauthorized|인증되지 않은 클라이언트가 보호된 리소스를 요청한 경우|
-|403|Forbidden|접근할 권리가 없는 리소스를 요청한 경우|
-|404|Not Found|요청받은 리소스를 찾을 수 없는 경우|
-|405|Method Not Allowed|해당 리소스에서 불가능한 METHOD로 요청한 경우|
-
-### 5XX 서버 에러 관련
-|상태코드|의미|설명|
-|:-:|:-:|:-:|
-|500|Internal Server Error|요청에 대해 서버가 처리 방법을 모르는 경우|
+### 3. REST API는 요청에 대한 응답 상태 코드도 명확하게 정의해야 합니다.
+- [HTTP 응답 상태 코드 바로가기]()
 
 ## 설계 참고 사항
 
@@ -112,4 +70,3 @@
 - [AWS RESTful API란 무엇인가요?](https://aws.amazon.com/ko/what-is/restful-api/)
 - [Microsoft RESTful 웹 API 디자인](https://learn.microsoft.com/ko-kr/azure/architecture/best-practices/api-design?fbclid=IwAR3TZPok-d2vsIwMyguAGAzfJS8LK5qITS9a2PE5YeaJBtNsUCrtiFDfg74)
 - [REST API 제대로 알고 사용하기](https://meetup.nhncloud.com/posts/92)
-- [MDN HTTP 상태 코드](https://developer.mozilla.org/ko/docs/Web/HTTP/Status)
