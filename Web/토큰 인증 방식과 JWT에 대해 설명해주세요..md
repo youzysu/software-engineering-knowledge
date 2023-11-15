@@ -18,7 +18,38 @@
 - 클라이언트 측에서 토큰을 탈취 당하면 대처하기 어려워 토큰의 유효 시간을 제한하여 보안을 더 강화할 수 있습니다.
 
 ## JWT
-- JWT란 JSON Web Token으로, 
+- JWT란 JSON Web Token으로, 인증에 필요한 정보들을 암호화시킨 JSON 형식의 토큰입니다.
+
+### 구조
+- JWT는 `.`를 구분자로 나누어지는 세가지 문자열의 조합으로 구성됩니다.
+- `헤더Header`.`내용Payload`.`서명Signature`
+	- 헤더Header에는 토큰 타입과 해시 알고리즘 종류가 담겨 있습니다.
+	- 내용Payload에는 사용자 권한 정보 등 사용자 정보가 담겨있습니다.
+	- 서명Signature은 Header와 Payload를 인코딩하고, 개인키를 추가하여 Header에 명시된 해시 함수를 적용하여 암호화한 값입니다.
+		- Signature에서 비밀키를 추가했기 때문에 외부에서 복호화할 수 없어 토큰의 위변조 여부를 확인할 수 있습니다.
+
+### 토큰 기반 인증 방식
+- JWT 기반 인증 방식은 JWT 형식의 Access Token을 HTTP Header에 추가하여 이를 통해 서버가 클라이언트를 식별하는 방식입니다.
+1. 사용자가 서버에 로그인 인증 요청을 합니다.
+2. 서버에서 Header, Payload, Signature를 정의하고 JWT 형식으로 Access Token을 생성하여 클라이언트에게 발급합니다.
+3. 클라이언트는 서버로부터 받은 Access Token을 저장해두고, 이후 인증이 필요한 요청을 할 때마다 Request Header Authoriztion에 토큰을 추가해서 보냅니다.
+4. 서버는 Access Token의 유효 시간, 위변조 여부 확인 등 인증 과정을 진행합니다.
+5. 인증이 완료되면 Payload에 들어있는 유저 정보를 사용하여 요청한 리소스를 응답합니다.
+6. Access Token이 만료되면 클라이언트는 Refresh Token으로 새로운 Access Token을 재발급받고 재요청합니다.
+7. Refresh Token이 만료되면 모든 토큰을 삭제하고, 유저에게 다시 로그인을 요청합니다.
+
+### 토큰 유형
+- [토큰 인증 방식의 보안 상 문제점] 토큰 기반 인증 방식에서는 토큰 자체로 클라이언트를 검증하여 권한 인증을 진행하기 때문에, 토큰이 제3자에게 탈취되면 토큰이 만료되기 전까지 해당 유저의 권한 접근이 가능해집니다.
+- 따라서 Access Token의 유효 시간을 짧게 설정하고, 토큰 재발급을 위한 Refresh Token을 이중으로 두고 사용합니다.
+
+#### 1. Access Token
+- 클라이언트가 갖고 있는 실제로 유저의 정보가 담긴 토큰입니다.
+- 인증이 필요한 요청에서 Access Token에 있는 정보를 활용하여 사용자 정보에 맞게 응답을 제공합니다.
+- 탈취 위험이 있으므로 비교적 유효 시간을 짧게 설정하여 관리해야 합니다.
+
+#### 2. Refresh Token
+- 새로운 Access Token을 발급해주기 위해 사용하는 토큰입니다.
+- DB에 유저 정보와 함께 저장해두고, 토큰 재발급 요청 시 Refresh Token에 있는 정보로 새로운 Access Token을 발급하여 제공합니다.
 
 ## 참고 자료
 - [JWT 토큰 인증 이란? (쿠키 vs 세션 vs 토큰)](https://inpa.tistory.com/entry/WEB-%F0%9F%93%9A-JWTjson-web-token-%EB%9E%80-%F0%9F%92%AF-%EC%A0%95%EB%A6%AC#recentEntries)
