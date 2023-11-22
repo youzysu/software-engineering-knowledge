@@ -20,6 +20,10 @@
 ### Web
 - [쿠키와 세션에 대해 설명해주세요.](https://github.com/youzysu/self-tech-interview/blob/main/Web/%EC%BF%A0%ED%82%A4%EC%99%80%20%EC%84%B8%EC%85%98%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
 - [토큰 인증 방식과 JWT에 대해 설명해주세요.](https://github.com/youzysu/self-tech-interview/blob/main/Web/%ED%86%A0%ED%81%B0%20%EC%9D%B8%EC%A6%9D%20%EB%B0%A9%EC%8B%9D%EA%B3%BC%20JWT%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
+- [OAuth에 대해 설명해주세요.](https://github.com/youzysu/self-tech-interview/blob/main/Web/OAuth%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
+- [브라우저 렌더링 과정에 대해 설명해주세요.](https://github.com/youzysu/self-tech-interview/blob/main/Web/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EB%A0%8C%EB%8D%94%EB%A7%81%20%EA%B3%BC%EC%A0%95%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
+### React
+- [useMemo와 useCallback에 대해 설명해주세요.](https://github.com/youzysu/self-tech-interview/blob/main/React/useMemo%EC%99%80%20useCallback%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
 ### Data Structure
 
 <br />
