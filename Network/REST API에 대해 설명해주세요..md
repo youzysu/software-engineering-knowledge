@@ -36,7 +36,7 @@
 
 ### 2. 행위 Verb
 - HTTP METHOD를 이용하여 자원에 대해 수행해야 하는 작업 행위를 정의합니다.
-- 주요 HTTP METHOD로는 GET, POST, PUT, PATCH, DELETE가 있습니다. ([HTTP Request Method 바로가기]())
+- 주요 HTTP METHOD로는 GET, POST, PUT, PATCH, DELETE가 있습니다. ([HTTP Request Method](/Network/HTTP%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md#http-request-method))
 
 ### 3. 표현 Representations
 - 형식이 지정된 리소스를 의미하며, 클라이언트가 요청하는 자원의 형식은 다양할 수 있습니다.
@@ -52,8 +52,7 @@
 	- Collection은 복수를 사용하고, 해당 Collection 안의 특정 Document를 의미하도록 URI를 표현합니다.
 	- 예를 들어, `/players/13`은 players라는 Collection과 13을 의미하는 Document로 URI를 표현한 것입니다.
 - 리소스 조회, 생성, 수정 등 표현하고자 하는 행위에 적합한 METHOD를 사용해야 합니다.
-### 3. REST API는 요청에 대한 응답 상태 코드도 명확하게 정의해야 합니다.
-- [HTTP 응답 상태 코드 바로가기]()
+### 3. REST API는 요청에 대한 응답 상태 코드도 명확하게 정의해야 합니다. ([HTTP 응답 상태 코드](/Network/HTTP%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md#http-response-status-code))
 
 ## 설계 참고 사항
 
