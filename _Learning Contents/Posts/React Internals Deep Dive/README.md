@@ -1,0 +1,1 @@
+> [React Internals Deep Dive](https://jser.dev/series/react-source-code-walkthrough)
