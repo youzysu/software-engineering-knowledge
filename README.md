@@ -55,5 +55,5 @@
 - [jwasham / coding-interview-university](https://github.com/jwasham/coding-interview-university)
 - [trekhleb / javascript-algorithms](https://github.com/trekhleb/javascript-algorithms)
 
-## 2. 학습 저장소 Learning Contents
+## [2. 학습 저장소 Learning Content](/Learning%20Content)
 - 강의, 도서, 아티클 등 학습한 콘텐츠를 기록합니다.
