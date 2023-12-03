@@ -1,11 +1,16 @@
-- CSR과 SSR은 페이지를 렌더링하는 방식을 말합니다.
+#### 페이지 렌더링 방식
+- html 파일이 생성되는 위치
+
 ## CSR
-- CSR이란 Client-Side Rendering 방식을 의미합니다.
+- Client-Side Rendering
 ### 동작 방식
 
 ## SSR
-- SSR이란 Server-Side Rendering 방식을 의미합니다.
+- Server-Side Rendering
 
 ### 동작 방식
 
 ## CSR과 SSR의 차이점
+
+## 참고자료
+- [SSR 시작하기 전 알아야 할 것들](https://yozm.wishket.com/magazine/detail/2330/)
