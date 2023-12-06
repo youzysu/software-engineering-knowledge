@@ -1,7 +1,7 @@
 ## HTTP
 - HyperText Transfer Protocol
 - 웹 상에서 정보를 전송하기 위한 통신 프로토콜
-- 서버-클라이언트 모델을
+- 서버-클라이언트 모델
 - 클라이언트에서 HTTP Request를 보내면 서버는 HTTP response를 클라이언트에 보내는 방식
 #### Request
 1. Start Line: Method, Path, HTTP version
