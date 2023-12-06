@@ -12,6 +12,8 @@
 - [Promise의 동작 방식에 대해 자세히 설명해주세요.](/JavaScript/Promise%EC%9D%98%20%EB%8F%99%EC%9E%91%20%EB%B0%A9%EC%8B%9D%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%9E%90%EC%84%B8%ED%9E%88%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
 - [이벤트 루프에 대해 설명해주세요.](/JavaScript/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A3%A8%ED%94%84%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
 - [클로저에 대해 설명해주세요.](/JavaScript/%ED%81%B4%EB%A1%9C%EC%A0%80%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
+- [호이스팅에 대해 설명해주세요.](/JavaScript/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
+- [자바스크립트 최신 문법에 대해 설명해주세요.](/JavaScript/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EC%B5%9C%EC%8B%A0%20%EB%AC%B8%EB%B2%95%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
 ### Operating System
 - [동기와 비동기, Blocking과 Non-Blocking에 대해 설명해주세요.](/Operating-System/%EB%8F%99%EA%B8%B0%EC%99%80%20%EB%B9%84%EB%8F%99%EA%B8%B0%2C%20Blocking%EA%B3%BC%20Non-Blocking%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
 - [프로세스와 스레드에 대해 설명해주세요.](/Operating-System/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80%20%EC%8A%A4%EB%A0%88%EB%93%9C%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
@@ -25,6 +27,7 @@
 - [쿠키와 세션에 대해 설명해주세요.](/Web/%EC%BF%A0%ED%82%A4%EC%99%80%20%EC%84%B8%EC%85%98%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
 - [토큰 인증 방식과 JWT에 대해 설명해주세요.](/Web/%ED%86%A0%ED%81%B0%20%EC%9D%B8%EC%A6%9D%20%EB%B0%A9%EC%8B%9D%EA%B3%BC%20JWT%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
 - [OAuth에 대해 설명해주세요.](/Web/OAuth%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
+- [CSR, SSR에 대해 설명해주세요.](/Web/CSR%2C%20SSR%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
 ### Design Pattern
 - [Flux 패턴에 대해 설명해주세요.](/Design%20Pattern/Flux%20%ED%8C%A8%ED%84%B4%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
 ### React
@@ -32,14 +35,15 @@
 - [리액트의 동작 방식과 원리에 대해 설명해주세요.](/React/%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%9D%98%20%EB%8F%99%EC%9E%91%20%EB%B0%A9%EC%8B%9D%EA%B3%BC%20%EC%9B%90%EB%A6%AC%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
 - [useMemo와 useCallback에 대해 설명해주세요.](/React/useMemo%EC%99%80%20useCallback%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
 - [목록 렌더링 시 항목에 전달하는 key 속성에 대해 설명해주세요.](/React/%EB%AA%A9%EB%A1%9D%20%EB%A0%8C%EB%8D%94%EB%A7%81%20%EC%8B%9C%20%ED%95%AD%EB%AA%A9%EC%97%90%20%EC%A0%84%EB%8B%AC%ED%95%98%EB%8A%94%20key%20%EC%86%8D%EC%84%B1%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
+- [Context API에 대해 설명해주세요.](/React/Context%20API%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
+### TypeScript
+- [type과 interface의 차이점에 대해 설명해주세요.](/TypeScript/type%EA%B3%BC%20interface%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..md)
 ### Data Structure
 
 
 ### 📌 참고 자료
 - [Inpa Dev Blog](https://inpa.tistory.com/)
 - [The Modern JavaScript Tutorial](https://javascript.info/)
-- 인프런 개발남노씨 기출로 대비하는 개발자 전공면접
-- ChatGPT 활용
 - [WeareSoft / tech-interview](https://github.com/WeareSoft/tech-interview)
 - [JaeYeopHan / Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
 - [gyoogle / tech-interview-for-developer](https://github.com/gyoogle/tech-interview-for-developer)
@@ -50,3 +54,15 @@
 
 ## [2. 학습 저장소 Learning Content](/Learning%20Content)
 - 강의, 도서, 아티클 등 학습한 콘텐츠를 기록합니다.
+### 콘텐츠
+- [예상보다 24배 많은 콘텐츠에 프론트가 대처하는 방법](/Learning%20Content/Posts/%EC%98%88%EC%83%81%EB%B3%B4%EB%8B%A4%2024%EB%B0%B0%20%EB%A7%8E%EC%9D%80%20%EC%BD%98%ED%85%90%EC%B8%A0%EC%97%90%20%ED%94%84%EB%A1%A0%ED%8A%B8%EA%B0%80%20%EB%8C%80%EC%B2%98%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)
+- [프론트엔드 웹 서비스에서 우아하게 비동기 처리하기](/Learning%20Content/Posts/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C%20%EC%9B%B9%20%EC%84%9C%EB%B9%84%EC%8A%A4%EC%97%90%EC%84%9C%20%EC%9A%B0%EC%95%84%ED%95%98%EA%B2%8C%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0/README.md)
+- [주니어 웹 개발자가 알아야 할 비동기 통신](/Learning%20Content/Posts/%EC%A3%BC%EB%8B%88%EC%96%B4%20%EC%9B%B9%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80%20%EC%95%8C%EC%95%84%EC%95%BC%20%ED%95%A0%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%ED%86%B5%EC%8B%A0.md)
+### 공식문서
+- 리액트 공식문서
+### 책
+- 모두의 네트워크
+- 오브젝트
+### 강의
+- 모두를 위한 컴퓨터 과학
+- 운영체제
