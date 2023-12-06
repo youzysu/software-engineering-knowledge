@@ -1,1 +1,6 @@
-- 애플리케이션의 크기가 커지면 상태 관리(상태를 어떻게 구성할지, 컴포넌트 간 데이터 흐름)을 더 의도적으로 
+# 04 Preserving and Resetting State
+### Key takeaways
+- React **keeps state** for as long as **the same component** is rendered at **the same position**.
+	- the same component: same type, same key
+- State is associated with **the tree position** in which you put that JSX.
+- giving component **a different key** forces a subtree to **reset its state.**

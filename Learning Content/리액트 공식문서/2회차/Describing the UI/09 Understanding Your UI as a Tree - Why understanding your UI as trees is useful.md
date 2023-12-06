@@ -1,5 +1,3 @@
-# 09 Understanding Your UI as a Tree - Why understanding your UI as trees is useful
-
 ### Key takeaways
 - **Trees**: a common way to **represent the relationship between entities.** 
 	- to model UI (View Model)
