@@ -1,0 +1,1 @@
+> [The Product-Minded Software Engineer](https://blog.pragmaticengineer.com/the-product-minded-engineer/)
