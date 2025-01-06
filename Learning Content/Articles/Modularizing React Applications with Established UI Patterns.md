@@ -1,0 +1,2 @@
+- [원문](https://martinfowler.com/articles/modularizing-react-apps.html)
+- [번역](https://velog.io/@eunbinn/modularizing-react-apps)
